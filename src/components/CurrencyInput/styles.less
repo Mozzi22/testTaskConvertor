@@ -1,0 +1,49 @@
+.Content {
+  display: flex;
+  flex-direction: row;
+  margin: 0 20px;
+  align-items: end;
+
+  &_Select {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    margin: 20px 0 0 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_Input {
+    display: flex;
+    flex-direction: column;
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    &-Field {
+      margin: 5px 0;
+      color: black;
+      border: none;
+      background-color: rgba(205, 214, 219, 0.3);
+      height: 30px;
+      border-bottom: 1px solid rgb(238, 239, 243);
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid rgb(238, 239, 243);
+      }
+    }
+  }
+}
